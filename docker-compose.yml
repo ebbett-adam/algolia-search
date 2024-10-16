@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  php-app:
+    build: .
+    container_name: php-app
+    ports:
+      - "8080:80"  # Expose port 8080 on the host
+    volumes:
+      - ./app:/var/www/html  # Local app directory mapped to container
+    environment:
+      - COMPOSER_ALLOW_SUPERUSER=1  # Allow Composer to run as superuser
+    restart: always  # Restart the container on failure

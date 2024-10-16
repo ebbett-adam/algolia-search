@@ -3,7 +3,7 @@ FROM php:8.2-apache
 
 # Install required tools and PHP extensions
 RUN apt-get update && \
-    apt-get install -y git unzip zip libzip-dev && \
+    apt-get install -y git unzip zip libzip-dev nano && \
     docker-php-ext-install pdo pdo_mysql zip
 
 # Install Composer globally

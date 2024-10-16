@@ -1,8 +1,7 @@
-version: '3.8'
 services:
   php-app:
     build: .
-    container_name: php-app
+    container_name: ebbett-marketing-algolia-search
     ports:
       - "8080:80"  # Expose port 8080 on the host
     volumes:

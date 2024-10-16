@@ -3,7 +3,7 @@ services:
     build: .
     container_name: ebbett-marketing-algolia-search
     ports:
-      - "8080:80"  # Expose port 8080 on the host
+      - "8989:80"  # Expose port 8080 on the host
     volumes:
       - ./app:/var/www/html  # Local app directory mapped to container
     environment:
